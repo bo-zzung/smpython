@@ -44,14 +44,14 @@ if add_selectbox == 'calculate bmi':
     st.balloons()
 
 
-    image = Image.open('/home/ubuntu/바탕화면/sm_python/dolphin.jpg')
+    image = Image.open('dolphin.jpg')
 
     st.image(image, caption='Happy and Cute dolphin')
 
 elif add_selectbox == 'gapminder':
     st.write('# Gapminder')
     
-    data = pd.read_csv('/home/ubuntu/바탕화면/sm_python/gapminder.csv')
+    data = pd.read_csv('gapminder.csv')
     st.write(data)
     
     colors = []
