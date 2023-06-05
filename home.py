@@ -35,6 +35,6 @@ if st.button('계산'):
 st.balloons()
 
 
-image = Image.open('/home/ubuntu/바탕화면/sm_python/dolphin.jpg')
+image = Image.open('dolphin.jpg')
 
 st.image(image, caption='Happy and Cute dolphin')
