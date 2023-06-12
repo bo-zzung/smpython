@@ -13,7 +13,7 @@ dates = [current_date + timedelta(days=i) for i in range(7)]
 
 # 특정 날짜의 날씨 데이터를 가져오는 함수 생성
 def get_weather(date):
-    #날짜를 데이터를 변수에 저장
+    #날짜데이터를 날짜 형식 변환을 사용하여 변수에 저장
     date_str = date.strftime("%Y-%m-%d")
     #API url에 연결
     response = requests.get(f'https://api.weatherapi.com/v1/forecast.json?key=c8a4a4ab89864d49b7211713230906&q=Busan&dt={date_str}')
@@ -41,7 +41,7 @@ for date in dates:
 
 # 달력을 생성하고 날짜를 클릭할 때 날씨를 표시
 for date in dates:
-    #날짜를 데이터를 변수에 저장
+    #날짜데이터를 날짜 형식 변환을 사용하여 변수에 저장
     date_str = date.strftime("%Y-%m-%d")
     #divider을 이용해 칸 나눔
     st.divider()
